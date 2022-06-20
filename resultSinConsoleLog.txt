@@ -1,0 +1,937 @@
+Statistical profiling result from sinlog-v8.log, (3690 ticks, 1 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   2890   78.3%          /usr/bin/node
+    107    2.9%          /usr/lib/x86_64-linux-gnu/libc.so.6
+     17    0.5%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30
+      4    0.1%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     30    0.8%    4.5%  LazyCompile: *resolve node:path:1091:10
+     19    0.5%    2.8%  LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      7    0.2%    1.0%  LazyCompile: *next /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:176:16
+      4    0.1%    0.6%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      2    0.1%    0.3%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      2    0.1%    0.3%  LazyCompile: *normalizeString node:path:66:25
+      2    0.1%    0.3%  LazyCompile: *_write node:internal/streams/writable:283:16
+      2    0.1%    0.3%  LazyCompile: *Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      2    0.1%    0.3%  Function: ^writeHead node:_http_server:270:19
+      2    0.1%    0.3%  Function: ^parserOnIncoming node:_http_server:857:26
+      2    0.1%    0.3%  Function: ^expressInit /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/middleware/init.js:29:30
+      2    0.1%    0.3%  Function: ^compression /home/tobias/Documentos/coderCursoBack/clase32/node_modules/compression/index.js:59:31
+      2    0.1%    0.3%  Function: ^compileFunction node:vm:308:25
+      2    0.1%    0.3%  Function: ^assertEncoding node:internal/fs/utils:152:24
+      2    0.1%    0.3%  Function: ^_storeHeader node:_http_outgoing:374:22
+      2    0.1%    0.3%  Function: ^_addHeaderLines node:_http_incoming:199:25
+      1    0.0%    0.1%  RegExp: ^\/signInError\/?$
+      1    0.0%    0.1%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      1    0.0%    0.1%  RegExp: ^.*[\.\/\\]
+      1    0.0%    0.1%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      1    0.0%    0.1%  LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      1    0.0%    0.1%  LazyCompile: *setHeader node:_http_outgoing:574:57
+      1    0.0%    0.1%  LazyCompile: *restore /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:620:17
+      1    0.0%    0.1%  LazyCompile: *parse /home/tobias/Documentos/coderCursoBack/clase32/node_modules/vary/index.js:96:16
+      1    0.0%    0.1%  LazyCompile: *dirname node:path:1275:10
+      1    0.0%    0.1%  LazyCompile: *compileFunction node:vm:308:25
+      1    0.0%    0.1%  LazyCompile: *basename node:path:1306:11
+      1    0.0%    0.1%  LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    0.0%    0.1%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.1%  Function: ^wrapmethods /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express-session/index.js:394:25
+      1    0.0%    0.1%  Function: ^urlencodedParser /home/tobias/Documentos/coderCursoBack/clase32/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1    0.0%    0.1%  Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1    0.0%    0.1%  Function: ^socketOnDrain node:_http_server:564:23
+      1    0.0%    0.1%  Function: ^shift node:internal/fixed_queue:108:8
+      1    0.0%    0.1%  Function: ^send /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/response.js:107:25
+      1    0.0%    0.1%  Function: ^readSync node:fs:684:18
+      1    0.0%    0.1%  Function: ^onParserExecute node:_http_server:639:25
+      1    0.0%    0.1%  Function: ^normalizeString node:path:66:25
+      1    0.0%    0.1%  Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    0.0%    0.1%  Function: ^matchKnownFields node:_http_incoming:231:26
+      1    0.0%    0.1%  Function: ^jsonParser /home/tobias/Documentos/coderCursoBack/clase32/node_modules/body-parser/lib/types/json.js:98:30
+      1    0.0%    0.1%  Function: ^isAbsolute node:path:1156:13
+      1    0.0%    0.1%  Function: ^insertGuarded node:internal/timers:325:23
+      1    0.0%    0.1%  Function: ^howMuchToRead node:internal/streams/readable:377:23
+      1    0.0%    0.1%  Function: ^header /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/response.js:754:29
+      1    0.0%    0.1%  Function: ^hasHooks node:internal/async_hooks:471:18
+      1    0.0%    0.1%  Function: ^handle /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.1%  Function: ^getObserverType node:internal/perf/observe:116:25
+      1    0.0%    0.1%  Function: ^getHeader node:_http_outgoing:590:57
+      1    0.0%    0.1%  Function: ^get node:internal/streams/duplex:94:8
+      1    0.0%    0.1%  Function: ^get node:internal/bootstrap/pre_execution:370:8
+      1    0.0%    0.1%  Function: ^generate /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express-session/index.js:363:22
+      1    0.0%    0.1%  Function: ^clearRequestTimeout node:_http_server:779:29
+      1    0.0%    0.1%  Function: ^assertSize node:internal/crypto/random:75:20
+      1    0.0%    0.1%  Function: ^applyHeaders /home/tobias/Documentos/coderCursoBack/clase32/node_modules/cors/lib/index.js:144:24
+      1    0.0%    0.1%  Function: ^afterWrite node:internal/streams/writable:487:20
+      1    0.0%    0.1%  Function: ^Writable.uncork node:internal/streams/writable:341:37
+      1    0.0%    0.1%  Function: ^Socket._writeGeneric node:net:791:42
+      1    0.0%    0.1%  Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    0.0%    0.1%  Function: ^Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1    0.0%    0.1%  Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/validators:84:3
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/validators:73:3
+      1    0.0%    0.1%  Function: ^<anonymous> node:internal/validators:101:40
+      1    0.0%    0.1%  Function: ^<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express-session/index.js:598:43
+      1    0.0%    0.1%  Function: ^<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/cors/lib/index.js:204:37
+
+ [C++]:
+   ticks  total  nonlib   name
+    221    6.0%   32.9%  __write@@GLIBC_2.2.5
+     69    1.9%   10.3%  fwrite@@GLIBC_2.2.5
+     53    1.4%    7.9%  epoll_pwait@@GLIBC_2.6
+     32    0.9%    4.8%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     22    0.6%    3.3%  syscall@@GLIBC_2.2.5
+     18    0.5%    2.7%  _IO_file_xsputn@@GLIBC_2.2.5
+     14    0.4%    2.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+     13    0.4%    1.9%  __mprotect@@GLIBC_PRIVATE
+     13    0.4%    1.9%  __libc_malloc@@GLIBC_2.2.5
+     10    0.3%    1.5%  pthread_cond_signal@@GLIBC_2.3.2
+      8    0.2%    1.2%  cfree@GLIBC_2.2.5
+      7    0.2%    1.0%  __read@@GLIBC_2.2.5
+      5    0.1%    0.7%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      5    0.1%    0.7%  operator new(unsigned long)@@GLIBCXX_3.4
+      5    0.1%    0.7%  __open@@GLIBC_2.2.5
+      4    0.1%    0.6%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      4    0.1%    0.6%  __pthread_mutex_unlock@GLIBC_2.2.5
+      4    0.1%    0.6%  __pthread_mutex_lock@GLIBC_2.2.5
+      4    0.1%    0.6%  __munmap@@GLIBC_PRIVATE
+      3    0.1%    0.4%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      3    0.1%    0.4%  __clock_gettime@@GLIBC_PRIVATE
+      2    0.1%    0.3%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      2    0.1%    0.3%  __mmap@@GLIBC_PRIVATE
+      2    0.1%    0.3%  _IO_do_write@@GLIBC_2.2.5
+      1    0.0%    0.1%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<unsigned long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.0%    0.1%  std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)@@GLIBCXX_3.4.9
+      1    0.0%    0.1%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const@@GLIBCXX_3.4.18
+      1    0.0%    0.1%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+      1    0.0%    0.1%  operator new[](unsigned long, std::nothrow_t const&)@@GLIBCXX_3.4
+      1    0.0%    0.1%  operator delete[](void*)@@GLIBCXX_3.4
+      1    0.0%    0.1%  operator delete(void*)@@GLIBCXX_3.4
+      1    0.0%    0.1%  freeaddrinfo@@GLIBC_2.2.5
+      1    0.0%    0.1%  fputc@@GLIBC_2.2.5
+      1    0.0%    0.1%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      1    0.0%    0.1%  __pthread_getspecific@GLIBC_2.2.5
+      1    0.0%    0.1%  __lll_lock_wait_private@@GLIBC_PRIVATE
+      1    0.0%    0.1%  _IO_file_sync@@GLIBC_2.2.5
+      1    0.0%    0.1%  _IO_default_xsputn@@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+    134    3.6%   19.9%  JavaScript
+    537   14.6%   79.9%  C++
+    160    4.3%   23.8%  GC
+   3018   81.8%          Shared libraries
+      1    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    201   47.7%    5.4%  __write@@GLIBC_2.2.5
+     68   16.2%    1.8%  fwrite@@GLIBC_2.2.5
+     31    7.4%    0.8%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     22    5.2%    0.6%  syscall@@GLIBC_2.2.5
+     17    4.0%    0.5%  _IO_file_xsputn@@GLIBC_2.2.5
+     14    3.3%    0.4%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+     11    2.6%    0.3%  __libc_malloc@@GLIBC_2.2.5
+      7    1.7%    0.2%  cfree@GLIBC_2.2.5
+      5    1.2%    0.1%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      5    1.2%    0.1%  __open@@GLIBC_2.2.5
+      4    1.0%    0.1%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      4    1.0%    0.1%  operator new(unsigned long)@@GLIBCXX_3.4
+      4    1.0%    0.1%  __pthread_mutex_unlock@GLIBC_2.2.5
+      4    1.0%    0.1%  __pthread_mutex_lock@GLIBC_2.2.5
+      4    1.0%    0.1%  __mprotect@@GLIBC_PRIVATE
+      3    0.7%    0.1%  __clock_gettime@@GLIBC_PRIVATE
+      2    0.5%    0.1%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      2    0.5%    0.1%  _IO_do_write@@GLIBC_2.2.5
+      1    0.2%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<unsigned long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.2%    0.0%  std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)@@GLIBCXX_3.4.9
+      1    0.2%    0.0%  std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+      1    0.2%    0.0%  pthread_cond_signal@@GLIBC_2.3.2
+      1    0.2%    0.0%  operator new[](unsigned long, std::nothrow_t const&)@@GLIBCXX_3.4
+      1    0.2%    0.0%  operator delete[](void*)@@GLIBCXX_3.4
+      1    0.2%    0.0%  operator delete(void*)@@GLIBCXX_3.4
+      1    0.2%    0.0%  fputc@@GLIBC_2.2.5
+      1    0.2%    0.0%  __pthread_rwlock_wrlock@GLIBC_2.2.5
+      1    0.2%    0.0%  __pthread_rwlock_unlock@GLIBC_2.2.5
+      1    0.2%    0.0%  __pthread_getspecific@GLIBC_2.2.5
+      1    0.2%    0.0%  _IO_file_sync@@GLIBC_2.2.5
+      1    0.2%    0.0%  _IO_default_xsputn@@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   2890   78.3%  /usr/bin/node
+   2093   72.4%    /usr/bin/node
+    902   43.1%      Function: ^compileFunction node:vm:308:25
+    753   83.5%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    738   98.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+    718   97.3%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     20    2.7%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     15    2.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+     15  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    143   15.9%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+    143  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    143  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     57    2.7%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     45   78.9%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      7   15.6%          Function: ~<anonymous> node:crypto:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      6   13.3%          Function: ~<anonymous> node:http:1:1
+      6  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5   11.1%          Function: ~<anonymous> node:tls:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    6.7%          Function: ~<anonymous> node:internal/child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    6.7%          Function: ~<anonymous> node:child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    6.7%          Function: ~<anonymous> node:_http_client:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    4.4%          LazyCompile: ~lazyLoadStreams node:fs:2858:25
+      2  100.0%            LazyCompile: ~get ReadStream node:fs:3001:17
+      2    4.4%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    4.4%          Function: ~<anonymous> node:assert:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      1  100.0%            LazyCompile: ~get node:crypto:287:8
+      1    2.2%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          Function: ~<anonymous> node:module:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          Function: ~<anonymous> node:dns:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          Function: ~<anonymous> node:_http_server:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    2.2%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7   12.3%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      7  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      7  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      5    8.8%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      5  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      5  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     55    2.6%      /usr/bin/node
+      6   10.9%        Function: ^header /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/response.js:754:29
+      6  100.0%          Function: ^contentType /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/response.js:594:32
+      6  100.0%            Function: ^send /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/response.js:107:25
+      5    9.1%        Function: ^FastBuffer node:internal/buffer:958:14
+      5  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      3   60.0%            Function: ^createPool node:buffer:151:20
+      1   20.0%            LazyCompile: ~createPool node:buffer:151:20
+      1   20.0%            Function: ^allocate node:buffer:398:18
+      4    7.3%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      3   75.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   25.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            LazyCompile: ~tryPackage node:internal/modules/cjs/loader:338:20
+      4    7.3%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      4  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      2   50.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      2   50.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3    5.5%        Function: ^format /home/tobias/Documentos/coderCursoBack/clase32/node_modules/content-type/index.js:65:17
+      3  100.0%          Function: ^setCharset /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/utils.js:250:41
+      3  100.0%            Function: ^send /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/response.js:107:25
+      3    5.5%        Function: ^expressInit /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/middleware/init.js:29:30
+      3  100.0%          LazyCompile: *next /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:176:16
+      3  100.0%            Function: ^query /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/middleware/query.js:39:24
+      3    5.5%        Function: ^asString /home/tobias/Documentos/coderCursoBack/clase32/node_modules/date-format/lib/index.js:29:18
+      3  100.0%          Function: ^timestampLevelAndCategory /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/layouts.js:42:35
+      3  100.0%            Function: ^colouredLayout /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/layouts.js:71:24
+      2    3.6%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1   50.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1   50.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.8%        LazyCompile: ~u /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/el/finance/credit_card/american_express.js:1:202
+      1  100.0%          LazyCompile: ~x /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/el/finance/credit_card/american_express.js:1:375
+      1  100.0%            Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/el/finance/credit_card/american_express.js:1:1
+      1    1.8%        LazyCompile: ~parseLineInfo /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bluebird/js/release/debuggability.js:665:23
+      1  100.0%          LazyCompile: ~setBounds /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bluebird/js/release/debuggability.js:675:19
+      1  100.0%            LazyCompile: ~module.exports /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bluebird/js/release/promise.js:2:26
+      1    1.8%        LazyCompile: ~isIPv6 node:internal/net:35:16
+      1  100.0%          LazyCompile: ~isIP node:internal/net:39:14
+      1  100.0%            Function: ^parseSslOptions /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/connection/connect.js:239:25
+      1    1.8%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en/animal/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en/animal/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.8%        LazyCompile: ~formatProperty node:internal/util/inspect:1810:24
+      1  100.0%          LazyCompile: ~formatRaw node:internal/util/inspect:820:19
+      1  100.0%            LazyCompile: ~formatValue node:internal/util/inspect:745:21
+      1    1.8%        LazyCompile: ~findModuleNotFound /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/node_modules/optional-require/dist/index.js:51:28
+      1  100.0%          LazyCompile: ~_optionalRequire /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/node_modules/optional-require/dist/index.js:109:26
+      1  100.0%            LazyCompile: ~x /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/node_modules/optional-require/dist/index.js:170:22
+      1    1.8%        LazyCompile: ~f /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nl/internet/index.js:1:246
+      1  100.0%          LazyCompile: ~m /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nl/internet/index.js:1:419
+      1  100.0%            Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nl/internet/index.js:1:1
+      1    1.8%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.8%        LazyCompile: ~StateMachine.ctor /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/lib/statemachine.js:34:29
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/lib/internal.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.8%        LazyCompile: ~Mime.lookup /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mime/mime.js:69:33
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mime/mime.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.8%        LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/uri_parser.js:95:35
+      1  100.0%          LazyCompile: ~onresolve node:dns:207:19
+      1    1.8%        LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose-legacy-pluralize/index.js:87:34
+      1  100.0%          /usr/bin/node
+      1  100.0%            LazyCompile: ~pluralize /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose-legacy-pluralize/index.js:83:19
+      1    1.8%        LazyCompile: *next /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:176:16
+      1  100.0%          Function: ^handle /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:136:31
+      1  100.0%            Function: ^router /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:46:18
+      1    1.8%        LazyCompile: *compileFunction node:vm:308:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.8%        LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+      1    1.8%        Function: ~<anonymous> node:internal/crypto/keys:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    1.8%        Function: ~<anonymous> node:constants:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1    1.8%        Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.8%        Function: ^sendLogEventToAppender /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/log4js.js:36:32
+      1  100.0%          Function: ^<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/clustering.js:24:21
+      1  100.0%            /usr/bin/node
+      1    1.8%        Function: ^parserOnIncoming node:_http_server:857:26
+      1  100.0%          Function: ^parserOnHeadersComplete node:_http_common:77:33
+      1    1.8%        Function: ^getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:273:15
+      1    1.8%        Function: ^compileFunction node:vm:308:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.8%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      1  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      1  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      1    1.8%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.8%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     29    1.4%      Function: ^initialize /home/tobias/Documentos/coderCursoBack/clase32/node_modules/passport/lib/middleware/initialize.js:51:29
+     27   93.1%        LazyCompile: *next /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:176:16
+     27  100.0%          Function: ^session /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express-session/index.js:179:26
+     27  100.0%            LazyCompile: *next /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:176:16
+      2    6.9%        Function: ^handle /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%          Function: ^trim_prefix /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:288:23
+      2  100.0%            Function: ^<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:275:64
+     27    1.3%      Function: ^writevGeneric node:internal/stream_base_commons:122:23
+     27  100.0%        Function: ^Socket._writeGeneric node:net:791:42
+     26   96.3%          Function: ^Socket._writev node:net:823:36
+     26  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+      1    3.7%          LazyCompile: ~Socket._writev node:net:823:36
+      1  100.0%            LazyCompile: ~doWrite node:internal/streams/writable:398:17
+     26    1.2%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     26  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      5   19.2%          Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4   15.4%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:477:29
+      4  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      4   15.4%          Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    7.7%          Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    7.7%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    7.7%          Function: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    7.7%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.8%          LazyCompile: ~initializeSourceMapsHandlers node:internal/bootstrap/pre_execution:516:38
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1    3.8%          LazyCompile: ~initializeReport node:internal/bootstrap/pre_execution:238:26
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1    3.8%          Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.8%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    3.8%          Function: ~<anonymous> node:internal/blocklist:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     22    1.1%      Function: ^<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/dist/routes/routes.js:75:30
+     22  100.0%        Function: ^handle /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/layer.js:86:49
+     21   95.5%          Function: ^next /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/route.js:114:16
+     21  100.0%            Function: ^dispatch /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/route.js:98:45
+      1    4.5%          LazyCompile: ~next /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/route.js:114:16
+      1  100.0%            Function: ^dispatch /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/route.js:98:45
+
+    221    6.0%  __write@@GLIBC_2.2.5
+    196   88.7%    /usr/bin/node
+      3    1.5%      LazyCompile: ~module.exports /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bluebird/js/release/promise.js:2:26
+      3  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bluebird/js/release/bluebird.js:1:1
+      3  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      3  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2    1.0%      LazyCompile: ~realpathSync node:fs:2425:22
+      2  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      1   50.0%          LazyCompile: ~tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            LazyCompile: ~tryExtensions node:internal/modules/cjs/loader:400:23
+      1   50.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2    1.0%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      2    1.0%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ur/app/index.js:1:1
+      2  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      2  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2    1.0%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/cz/address/index.js:1:1
+      2  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      2  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      5    2.3%    LazyCompile: *compileFunction node:vm:308:25
+      4   80.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      4  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      4  100.0%          LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      4  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   20.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+
+    107    2.9%  /usr/lib/x86_64-linux-gnu/libc.so.6
+     78   72.9%    /usr/bin/node
+      9   11.5%      /usr/bin/node
+      2   22.2%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      2  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      2  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   11.1%        LazyCompile: ~fileAppender /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/appenders/file.js:29:22
+      1  100.0%          LazyCompile: ~configure /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/appenders/file.js:117:19
+      1  100.0%            LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/appenders/index.js:90:34
+      1   11.1%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/dist/app.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1   11.1%        Function: ^toString /home/tobias/Documentos/coderCursoBack/clase32/node_modules/uid-safe/index.js:102:19
+      1  100.0%          Function: ^uidSync /home/tobias/Documentos/coderCursoBack/clase32/node_modules/uid-safe/index.js:75:18
+      1  100.0%            Function: ^generateSessionId /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express-session/index.js:518:27
+      1   11.1%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   11.1%        Function: ^parse /home/tobias/Documentos/coderCursoBack/clase32/node_modules/content-type/index.js:106:16
+      1  100.0%          Function: ^setCharset /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/utils.js:250:41
+      1  100.0%            Function: ^send /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/response.js:107:25
+      1   11.1%        Function: ^FastBuffer node:internal/buffer:958:14
+      1  100.0%          Function: ^randomBytes node:internal/crypto/random:91:21
+      1  100.0%            Function: ^randomBytesSync /home/tobias/Documentos/coderCursoBack/clase32/node_modules/random-bytes/index.js:72:25
+      1   11.1%        Function: ^<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose-legacy-pluralize/index.js:87:34
+      1  100.0%          /usr/bin/node
+      1  100.0%            LazyCompile: ~pluralize /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose-legacy-pluralize/index.js:83:19
+      5    6.4%      LazyCompile: *realpathSync node:fs:2425:22
+      3   60.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2   66.7%          LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   33.3%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2   40.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1   50.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   50.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      4    5.1%      LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/dist/routes/routes.js:75:30
+      4  100.0%        LazyCompile: ~handle /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/layer.js:86:49
+      4  100.0%          LazyCompile: ~next /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/route.js:114:16
+      4  100.0%            LazyCompile: ~dispatch /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/route.js:98:45
+      3    3.8%      LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      3  100.0%        LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2   66.7%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   33.3%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      2    2.6%      LazyCompile: ~realpathSync node:fs:2425:22
+      2  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2    2.6%      LazyCompile: *resolve node:path:1091:10
+      2  100.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1   50.0%          LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   50.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      2    2.6%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      2  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      LazyCompile: ~x /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/mk/address/street_name.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/mk/address/street_name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.3%      LazyCompile: ~w /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fa/date/month.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fa/date/month.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.3%      LazyCompile: ~u /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sk/name/female_first_name.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sk/name/female_first_name.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.3%      LazyCompile: ~u /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/hy/date/month.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/hy/date/month.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.3%      LazyCompile: ~tryCreateBuffer node:fs:414:25
+      1  100.0%        LazyCompile: ~readFileSync node:fs:450:22
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      LazyCompile: ~onResponseHeaders /home/tobias/Documentos/coderCursoBack/clase32/node_modules/compression/index.js:140:47
+      1  100.0%        LazyCompile: ~writeHead /home/tobias/Documentos/coderCursoBack/clase32/node_modules/on-headers/index.js:28:29
+      1  100.0%          LazyCompile: ~writeHead /home/tobias/Documentos/coderCursoBack/clase32/node_modules/on-headers/index.js:28:29
+      1  100.0%            LazyCompile: ~_implicitHeader node:_http_server:265:68
+      1    1.3%      LazyCompile: ~handle /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%        LazyCompile: ~trim_prefix /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:288:23
+      1  100.0%          LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:275:64
+      1  100.0%            LazyCompile: ~process_params /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:327:47
+      1    1.3%      LazyCompile: ~h /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/internet/free_email.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/internet/free_email.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.3%      LazyCompile: ~getCheckedFunction node:os:63:28
+      1  100.0%        Function: ~<anonymous> node:os:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1    1.3%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ur/music/genre.js:1:311
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ur/music/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ur/music/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.3%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sv/name/last_name.js:1:311
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sv/name/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sv/name/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.3%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/commerce/color.js:1:311
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/commerce/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/commerce/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.3%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fr/company/name.js:1:311
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fr/company/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fr/company/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.3%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en/hacker/adjective.js:1:311
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en/hacker/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en/hacker/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.3%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/address/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.3%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/cz/name/title.js:1:311
+      1  100.0%        /usr/bin/node
+      1  100.0%          LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/cz/name/index.js:1:355
+      1  100.0%            Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/cz/name/index.js:1:1
+      1    1.3%      LazyCompile: ~g /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fa/internet/free_email.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fa/internet/free_email.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.3%      LazyCompile: ~formatWithOptions node:internal/util/inspect:2024:27
+      1  100.0%        LazyCompile: ~value node:internal/console/constructor:321:20
+      1  100.0%          LazyCompile: ~log node:internal/console/constructor:359:6
+      1  100.0%            /usr/bin/node
+      1    1.3%      LazyCompile: ~depd /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express-session/node_modules/depd/index.js:103:15
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express-session/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.3%      LazyCompile: ~a /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sv/name/index.js:1:246
+      1  100.0%        LazyCompile: ~i /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sv/name/index.js:1:419
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sv/name/index.js:1:1
+      1  100.0%            LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.3%      LazyCompile: ~RollingFileWriteStream /home/tobias/Documentos/coderCursoBack/clase32/node_modules/streamroller/lib/RollingFileWriteStream.js:40:14
+      1  100.0%        LazyCompile: ~RollingFileStream /home/tobias/Documentos/coderCursoBack/clase32/node_modules/streamroller/lib/RollingFileStream.js:5:14
+      1  100.0%          LazyCompile: ~openTheStream /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/appenders/file.js:51:25
+      1  100.0%            LazyCompile: ~fileAppender /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/appenders/file.js:29:22
+      1    1.3%      LazyCompile: ~Readable.read node:internal/streams/readable:394:35
+      1  100.0%        LazyCompile: ~flow node:internal/streams/readable:1008:14
+      1  100.0%          LazyCompile: ~resume_ node:internal/streams/readable:984:17
+      1  100.0%            Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.3%      LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/auth/scram.js:184:53
+      1  100.0%        LazyCompile: ~messageHandler /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:251:33
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            LazyCompile: ~processIncomingData /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:103:29
+      1    1.3%      LazyCompile: *stat node:internal/modules/cjs/loader:151:14
+      1  100.0%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1  100.0%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1    1.3%      LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      1  100.0%        Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/qs/lib/utils.js:6:26
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/qs/lib/utils.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mime-types/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/zu_ZA/name/male_first_name.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ro/name/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/pl/name/male_first_name.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/secondary_address.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/address/street_name.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/it/address/city_prefix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/he/name/male_first_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/he/address/secondary_address.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fa/commerce/color.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en_US/phone_number/area_code.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en_IND/internet/domain_suffix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en_AU_ocker/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en/animal/crocodilia.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/internet/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/address/country.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/dist/routes/routes.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.3%      Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%        Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    1.3%      Function: ^handle /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:136:31
+      1  100.0%        Function: ^handle /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/application.js:158:29
+      1  100.0%          Function: ^app /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/express.js:38:21
+      1  100.0%            Function: ^<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/engine.io/build/server.js:479:30
+      1    1.3%      Function: ^get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/hr/address/index.js:1:355
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/hr/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/hr/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.3%      Function: ^_handles_method /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/route.js:58:59
+      1  100.0%        LazyCompile: *next /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:176:16
+      1  100.0%          Function: ^handle /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:136:31
+      1  100.0%            Function: ^router /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/index.js:46:18
+      1    1.3%      Function: ^Readable.read node:internal/streams/readable:394:35
+      1  100.0%        Function: ^flow node:internal/streams/readable:1008:14
+      1  100.0%          Function: ^emitReadable_ node:internal/streams/readable:574:23
+      1  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.3%      Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%        LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/vi/name/index.js:1:1
+      1    1.3%      Function: ^<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/dist/routes/routes.js:75:30
+      1  100.0%        Function: ^handle /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^next /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/route.js:114:16
+      1  100.0%            Function: ^dispatch /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express/lib/router/route.js:98:45
+      4    3.7%    LazyCompile: *compileFunction node:vm:308:25
+      3   75.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      3  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      3  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3  100.0%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      1   25.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+
+     69    1.9%  fwrite@@GLIBC_2.2.5
+     63   91.3%    /usr/bin/node
+      2    3.2%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      2    3.2%      LazyCompile: ~generateHolderClass /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bluebird/js/release/join.js:28:39
+      2  100.0%        LazyCompile: ~module.exports /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bluebird/js/release/join.js:3:9
+      2  100.0%          LazyCompile: ~module.exports /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bluebird/js/release/promise.js:2:26
+      2  100.0%            Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bluebird/js/release/bluebird.js:1:1
+      1    1.6%      LazyCompile: ~setupWebCrypto node:internal/bootstrap/pre_execution:170:24
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.6%      LazyCompile: ~setupPerfHooks node:internal/bootstrap/pre_execution:283:24
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%          Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.6%      LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%        LazyCompile: ~makeConnection /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/connection/connect.js:269:24
+      1  100.0%          LazyCompile: ~connect /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/connection/connect.js:18:17
+      1  100.0%            LazyCompile: ~checkServer /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/sdam/monitor.js:183:21
+      1    1.6%      LazyCompile: ~set expires /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express-session/session/cookie.js:60:14
+      1  100.0%        /usr/bin/node
+      1  100.0%          LazyCompile: ~set maxAge /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express-session/session/cookie.js:83:13
+      1  100.0%            /usr/bin/node
+      1    1.6%      LazyCompile: ~serializeLong /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bson/lib/bson/parser/serializer.js:377:29
+      1  100.0%        LazyCompile: ~serializeInto /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bson/lib/bson/parser/serializer.js:674:43
+      1  100.0%          Function: ^serializeObject /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bson/lib/bson/parser/serializer.js:320:31
+      1  100.0%            LazyCompile: ~serializeInto /home/tobias/Documentos/coderCursoBack/clase32/node_modules/bson/lib/bson/parser/serializer.js:674:43
+      1    1.6%      LazyCompile: ~processWaitQueue /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:447:26
+      1  100.0%        LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:238:22
+      1  100.0%          Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.6%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.6%      LazyCompile: ~prepareHandshakeDocument /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/connection/connect.js:170:34
+      1  100.0%        LazyCompile: ~performInitialHandshake /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/connection/connect.js:70:33
+      1  100.0%          LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/connection/connect.js:30:54
+      1  100.0%            LazyCompile: ~callback /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/connection/connect.js:295:28
+      1    1.6%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      1  100.0%        LazyCompile: ~immediate /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/lib/helpers/immediate.js:12:36
+      1  100.0%          LazyCompile: ~_ensureIndexes /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/lib/model.js:1659:24
+      1  100.0%            LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/lib/model.js:1621:52
+      1    1.6%      LazyCompile: ~n /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/es/address/street_address.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/es/address/street_address.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~m /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/name/male_first_name.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/name/male_first_name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~m /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en/commerce/color.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en/commerce/color.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~k /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/mk/date/index.js:1:520
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/mk/date/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~insert node:internal/timers:350:16
+      1  100.0%        LazyCompile: ~setUnrefTimeout node:internal/timers:372:25
+      1  100.0%          LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%            LazyCompile: ~makeConnection /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/connection/connect.js:269:24
+      1    1.6%      LazyCompile: ~getCheckedFunction node:os:63:28
+      1  100.0%        Function: ~<anonymous> node:os:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sk/company/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sk/company/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nl/date/index.js:1:355
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nl/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nl/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ko/company/index.js:1:355
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ko/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ko/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/hr/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/hr/address/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/he/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/he/name/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/he/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/he/address/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fr/phone_number/index.js:1:355
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fr/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fr/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fa/finance/credit_card/mastercard.js:1:311
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fa/finance/credit_card/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fa/finance/credit_card/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/name/name.js:1:311
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/name/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/de_CH/name/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/az/internet/index.js:1:355
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/az/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/az/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.6%      LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ar/address/city.js:1:311
+      1  100.0%        LazyCompile: ~get /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ar/address/index.js:1:355
+      1  100.0%          Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ar/address/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.6%      LazyCompile: ~d /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/pl/lorem/words.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/pl/lorem/words.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~d /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/mk/name/prefix.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/mk/name/prefix.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%        LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:137:19
+      1  100.0%          LazyCompile: ~useColors /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mquery/node_modules/debug/src/node.js:73:19
+      1  100.0%            LazyCompile: ~createDebug /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mquery/node_modules/debug/src/debug.js:62:21
+      1    1.6%      LazyCompile: ~createAppender /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/appenders/index.js:62:24
+      1  100.0%        LazyCompile: ~getAppender /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/appenders/index.js:48:21
+      1  100.0%          LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/appenders/index.js:112:41
+      1  100.0%            /usr/bin/node
+      1    1.6%      LazyCompile: ~b /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sk/address/building_number.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sk/address/building_number.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~b /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/phone_number/formats.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/phone_number/formats.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~b /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/el/company/adjective.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/el/company/adjective.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~Socket._write node:net:828:35
+      1  100.0%        LazyCompile: ~writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%          LazyCompile: ~_write node:internal/streams/writable:283:16
+      1  100.0%            LazyCompile: ~Writable.write node:internal/streams/writable:333:36
+      1    1.6%      LazyCompile: ~N /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/vi/phone_number/index.js:1:520
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/vi/phone_number/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%        LazyCompile: ~Socket node:net:285:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:85:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1    1.6%      LazyCompile: ~A /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en_AU/name/first_name.js:1:375
+      1  100.0%        Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en_AU/name/first_name.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.6%      LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:283:25
+      1  100.0%        LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/uri_parser.js:127:51
+      1  100.0%          LazyCompile: ~parseConnectionString /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/uri_parser.js:572:31
+      1  100.0%            LazyCompile: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/uri_parser.js:95:35
+      1    1.6%      Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:internal/fs/promises:1:1
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/log4js/lib/levels.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sk/phone_number/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/sk/company/noun.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/phone_number/formats.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nl/address/street_suffix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/name/female_first_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ja/cell_phone/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ge/company/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ge/address/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/address/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/fr/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en_GH/company/name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en_CA/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en_AU/address/street_suffix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/en/system/directoryPaths.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/address/secondary_address.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ~<anonymous> /home/tobias/Documentos/coderCursoBack/clase32/node_modules/@faker-js/faker/dist/cjs/locales/ar/address/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.6%      Function: ^normalizeEncoding node:internal/util:160:27
+      1  100.0%        LazyCompile: ~validateEncoding node:internal/validators:199:26
+      1  100.0%          LazyCompile: ~update node:internal/crypto/hash:95:40
+      1  100.0%            LazyCompile: ~HMAC /home/tobias/Documentos/coderCursoBack/clase32/node_modules/mongoose/node_modules/mongodb/lib/core/auth/scram.js:267:14
+      1    1.6%      /usr/bin/node
+      1  100.0%        LazyCompile: ~toString /home/tobias/Documentos/coderCursoBack/clase32/node_modules/uid-safe/index.js:102:19
+      1  100.0%          LazyCompile: ~uidSync /home/tobias/Documentos/coderCursoBack/clase32/node_modules/uid-safe/index.js:75:18
+      1  100.0%            LazyCompile: ~generateSessionId /home/tobias/Documentos/coderCursoBack/clase32/node_modules/express-session/index.js:518:27
+      5    7.2%    LazyCompile: *compileFunction node:vm:308:25
+      4   80.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      4  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      4  100.0%          LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+      4  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   20.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module.load node:internal/modules/cjs/loader:969:33
+
+     53    1.4%  epoll_pwait@@GLIBC_2.6
+
